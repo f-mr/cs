@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:hsqldb:file:db/cs_db
+    username: cs
+    password: cs
+    driver-class-name: org.hsqldb.jdbc.JDBCDriver
+    hikari:
+      connection-timeout: 20000
+      minimum-idle: 5
+      maximum-pool-size: 12
+      idle-timeout: 300000
+  jpa:
+    hibernate:
+      ddl-auto: create # made with purpose
